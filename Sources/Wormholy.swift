@@ -23,6 +23,13 @@ public class Wormholy: NSObject
         get { return CustomHTTPProtocol.ignoredHosts }
         set { CustomHTTPProtocol.ignoredHosts = newValue }
     }
+
+    /// Hosts that will be allowed from being recorded
+    ///
+    @objc public static var allowedHosts: [String] {
+        get { return CustomHTTPProtocol.allowedHosts }
+        set { CustomHTTPProtocol.allowedHosts = newValue }
+    }
   
     /// Limit the logging count
     ///
